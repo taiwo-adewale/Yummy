@@ -220,7 +220,7 @@ section {
   bottom: -5px;
   height: 100%;
   width: 100%;
-  background: url(/img/team-shape.svg) no-repeat center bottom;
+  background: url(../img/team-shape.svg) no-repeat center bottom;
   background-size: contain;
   z-index: 1;
 }
@@ -282,7 +282,7 @@ section {
 # About Section
 --------------------------------------------------------------*/
 #about .about-img {
-  background-image: url(/img/about.jpg);
+  background-image: url(../img/about.jpg);
   min-height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -439,7 +439,7 @@ form button[type=submit] {
   min-height: 400px;
   background-size: cover;
   background-position: center 90%;
-  background-image: url(/img/reservation.jpg);
+  background-image: url(../img/reservation.jpg);
 }
 
 /*--------------------------------------------------------------
