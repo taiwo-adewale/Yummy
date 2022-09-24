@@ -1,0 +1,18 @@
+{
+  "name": "Yummy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.9.1"
+  },
+  "devDependencies": {
+    "sass": "^1.53.0"
+  }
+}

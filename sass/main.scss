@@ -1,0 +1,39 @@
+//custom variables
+// $primary: #fa5fa5;
+// $secondary: #a8b82e;
+// // $light: ;
+// $dark: #a8763e;
+$offcanvas-horizontal-width: 300px;
+$navbar-toggler-focus-width: 0;
+
+//import the functions & variables
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-theme-colors: (
+  "altlight": #f2ebfa,
+  "altdark": #522192
+);
+
+$custom-spacers: (
+  10: $spacer * 0.625,
+  20: $spacer * 1.25,
+  30: $spacer * 1.875,
+  40: $spacer * 2.5,
+);
+
+$custom-font-sizes: (
+  14: 14px,
+);
+
+$custom-background-colors: (
+  "grey": #eee,
+);
+
+$theme-colors: map_merge($custom-theme-colors, $theme-colors);
+$spacers: map_merge($custom-spacers, $spacers);
+$font-sizes: map_merge($custom-font-sizes, $font-sizes);
+$utilities-bg-colors: map_merge($custom-background-colors, $utilities-bg-colors);
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';

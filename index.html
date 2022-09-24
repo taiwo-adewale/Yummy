@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Yummy - Delicious Healthy Food For You</title>
+    <meta name="description" content="Order Delicious Healthy Food">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css"><!-- CDN -->
+    <link rel="stylesheet" href="vendor/aos/aos.css"><!-- CDN -->
+    <link rel="stylesheet" href="vendor/swiper/swiper.css"><!-- CDN -->
+
+    <!-- Custom CSS Files -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50" tabindex="0">
+
+  <!-- ======= Preloader ======= -->
+  <div id="preloader"></div>
+  <!-- End Preloader -->
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top py-20 py-lg-20">
+      <div class="container justify-content-between">
+
+        <!-- Brand Logo -->
+        <a href="#" class="navbar-brand fs-1 lh-1">Yummy</a>
+        <button class="btn btn-primary rounded-pill d-lg-none" type="button" data-bs-toggle="modal" data-bs-target="#bookTableModal">Book a Table</button>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav menu -->
+        <div class="offcanvas offcanvas-end flex-grow-0" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header pb-0 justify-content-end">
+            <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body px-0">
+            <ul class="navbar-nav pt-0 pt-lg-0 fw-bold">
+              <li class="nav-item px-lg-20">
+                <a href="#hero" class="nav-link py-10 py-lg-1 px-20 px-lg-0">Home</a>
+              </li>
+              <li class="nav-item px-lg-20">
+                <a href="#menu" class="nav-link py-10 py-lg-1 px-20 px-lg-0">Menu</a>
+              </li>
+              <li class="nav-item px-lg-20">
+                <a href="#events" class="nav-link py-10 py-lg-1 px-20 px-lg-0">Events</a>
+              </li>
+              <li class="nav-item px-lg-20">
+                <a href="#chefs" class="nav-link py-10 py-lg-1 px-20 px-lg-0">Chefs</a>
+              </li>
+              <li class="nav-item px-lg-20">
+                <a href="#about" class="nav-link py-10 py-lg-1 px-20 px-lg-0">About</a>
+              </li>
+              <li class="nav-item px-lg-20">
+                <a href="#contact" class="nav-link py-10 py-lg-1 px-20 px-lg-0">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button class="btn btn-primary border-1 rounded-pill d-none d-lg-inline" type="button" data-bs-toggle="modal" data-bs-target="#bookTableModal">Book a Table</button>
+      </div>
+    </nav>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero bg-secondary">
+    <div class="container">
+      <div class="row justify-content-between overflow-hidden">
+        <div class="col-lg-5 d-flex flex-column justify-content-center order-2 oder-lg-1 mt-5 text-center text-lg-start" data-aos="fade-up" data-aos-offset="0">
+          <h1 class="display-3 fw-bolder mb-20">Enjoy your Healthy Delicious Food</h1>
+          <p class="mb-30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aliquid nostrum placeat. Quo, dolore laudantium.</p>
+          <div class="d-flex justify-content-center justify-content-lg-start align-items-center">
+            <button class="order-btn btn btn-primary rounded-pill fw-bold" type="button" data-bs-toggle="modal" data-bs-target="#bookTableModal">Book a Table</button>
+            <a href="#" class="btn d-flex align-items-center watch-vid"><i class="bi bi-play-circle fs-2 text-primary me-2 lh-1"></i><span class="fw-bold">Watch Video</span></a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-flex justify-content-center align-items-center order-1 order-lg-2 mt-4 mt-lg-5" data-aos="zoom-out" data-aos-delay="400">
+          <img src="img/spaghetti.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main>
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu">
+      <div class="container text-center">
+        <div class="section-header" data-aos="zoom-in-up">
+          <h2 class="text-uppercase text-muted mb-0 fs-14">Our Menu</h2>
+          <p class="display-5 fw-normal mb-0">Check Our <span class="text-primary">Yummy Menu</span></p>
+        </div>
+
+        <!-- Menu Nav Tabs -->
+        <ul class="nav nav-tabs justify-content-center border-0" id="menu-tab" role="tablist" data-aos="fade-up">
+          <li class="nav-item" role="presentation">
+            <a href="#" class="nav-link active text-muted py-10 px-1 mx-10" id="breakfast-tab" data-bs-toggle="tab" data-bs-target="#breakfast-tab-pane" role="tab" aria-controls="breakfast-tab-pane" aria-selected="true">Breakfast</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" class="nav-link text-muted py-10 px-1 mx-10" id="lunch-tab" data-bs-toggle="tab" data-bs-target="#lunch-tab-pane" role="tab" aria-controls="lunch-tab-pane" aria-selected="false">Lunch</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#" class="nav-link text-muted py-10 px-1 mx-10" id="dinner-tab" data-bs-toggle="tab" data-bs-target="#dinner-tab-pane" role="tab" aria-controls="dinner-tab-pane" aria-selected="false">Dinner</a>
+          </li>
+        </ul>
+
+        <!-- Menu Nav Tab Content -->
+        <div class="tab-content" id="menu-tab-content" data-aos="fade-up">
+
+          <!-- Breakfast -->
+          <div class="tab-pane fade show active text-center mt-30" id="breakfast-tab-pane" role="tabpanel" aria-labelledby="breakfast-tab" tabindex="0">
+            <h2 class="text-muted">MENU</h2>
+            <h3 class="text-primary fs-1 mb-4">Breakfast</h3>
+            <div class="row gy-3 justify-content-center">
+              <div class="col-md-6 col-lg-4">
+                <a href="#">
+                  <img src="img/loading.gif" data-src="img/menu/menu-1.jpg" alt="" class="img-fluid px-5 mb-4 lazy">
+                </a>
+                <h4 class="food-name mb-1">Beef & Grape</h4>
+                <p class="ingredients text-muted mb-2">Beef, Red Grape, Shredded Cabbage</p>
+                <p class="price text-primary fs-3 fw-bold">$7.35</p>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <a href="#">
+                  <img src="img/loading.gif" data-src="img/menu/menu-2.jpg" alt="" class="img-fluid px-5 mb-4 lazy">
+                </a>
+                <h4 class="food-name mb-1">Plaintain & Egg</h4>
+                <p class="ingredients text-muted mb-2">Plaintain, Egg, Ketchup</p>
+                <p class="price text-primary fs-3 fw-bold">$6.99</p>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <a href="#">
+                  <img src="img/loading.gif" data-src="img/menu/menu-3.jpg" alt="" class="img-fluid px-5 mb-4 lazy">
+                </a>
+                <h4 class="food-name mb-1">Noodle soup</h4>
+                <p class="ingredients text-muted mb-2">Pasta, Shrimp, Egg, Pepper</p>
+                <p class="price text-primary fs-3 fw-bold">$10.25</p>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <a href="#">
+                  <img src="img/loading.gif" data-src="img/menu/menu-4.jpg" alt="" class="img-fluid px-5 mb-4 lazy">
+                </a>
+                <h4 class="food-name mb-1">Corn Delight</h4>
+                <p class="ingredients text-muted mb-2">Corn, Lettuce, Salad, Black Pepper</p>
+                <p class="price text-primary fs-3 fw-bold">$8.75</p>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <a href="#">
+                  <img src="img/loading.gif" data-src="img/menu/menu-5.jpg" alt="" class="img-fluid px-5 mb-4 lazy">
+                </a>
+                <h4 class="food-name mb-1">Mashed Rice & Beef</h4>
+                <p class="ingredients text-muted mb-2">Mashed Rice, Tomatoes, Beef, Salaf</p>
+                <p class="price text-primary fs-3 fw-bold">$12.35</p>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <a href="#">
+                  <img src="img/loading.gif" data-src="img/menu/menu-6.jpg" alt="" class="img-fluid px-5 mb-4 lazy">
+                </a>
+                <h4 class="food-name mb-1">Peach Pie</h4>
+                <p class="ingredients text-muted mb-2">Peach, Pie, Milk</p>
+                <p class="price text-primary fs-3 fw-bold">$8.45</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lunch -->
+          <div class="tab-pane fade text-center mt-30" id="lunch-tab-pane" role="tabpanel" aria-labelledby="lunch-tab" tabindex="0">
+            <h2 class="text-muted">MENU</h2>
+            <h3 class="text-primary fs-1 mb-4">Lunch</h3>
+            <div class="row gy-3 justify-content-center">
+              <div class="col-md-6 col-lg-4">
+                <a href="#">
+                  <img src="img/loading.gif" data-src="img/menu/menu-7.jpg" alt="" class="img-fluid px-5 mb-4 lazy">
+                </a>
+                <h4 class="food-name mb-1">Egg Custard</h4>
+                <p class="ingredients text-muted mb-2">Egg, Custard, Chocolate</p>
+                <p class="price text-primary fs-3 fw-bold">$5.85</p>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <a href="#">
+                  <img src="img/loading.gif" data-src="img/menu/menu-8.jpg" alt="" class="img-fluid px-5 mb-4 lazy">
+                </a>
+                <h4 class="food-name mb-1">Fried Egg</h4>
+                <p class="ingredients text-muted mb-2">Fried Egg, Spinach</p>
+                <p class="price text-primary fs-3 fw-bold">4.95</p>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <a href="#">
+                  <img src="img/loading.gif" data-src="img/menu/menu-9.jpg" alt="" class="img-fluid px-5 mb-4 lazy">
+                </a>
+                <h4 class="food-name mb-1">Chicken Wings</h4>
+                <p class="ingredients text-muted mb-2">Chicken Wings, Shredded Lily</p>
+                <p class="price text-primary fs-3 fw-bold">$8.75</p>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <a href="#">
+                  <img src="img/loading.gif" data-src="img/menu/menu-10.jpg" alt="" class="img-fluid px-5 mb-4 lazy">
+                </a>
+                <h4 class="food-name mb-1">Fish Chips</h4>
+                <p class="ingredients text-muted mb-2">Fish Chips, Tomatoes, Broccoli</p>
+                <p class="price text-primary fs-3 fw-bold">$6.45</p>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <a href="#">
+                  <img src="img/loading.gif" data-src="img/menu/menu-11.jpg" alt="" class="img-fluid px-5 mb-4 lazy">
+                </a>
+                <h4 class="food-name mb-1">Salad Delight</h4>
+                <p class="ingredients text-muted mb-2">Lettuce, Spinach, Strawberry, Bacon</p>
+                <p class="price text-primary fs-3 fw-bold">$9.99</p>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <a href="#">
+                  <img src="img/loading.gif" data-src="img/menu/menu-12.jpg" alt="" class="img-fluid px-5 mb-4 lazy">
+                </a>
+                <h4 class="food-name mb-1">Potatoes & Egg</h4>
+                <p class="ingredients text-muted mb-2">Mashed Potatoes, Egg Strips, Tomatoes</p>
+                <p class="price text-primary fs-3 fw-bold">$5.65</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dinner -->
+          <div class="tab-pane fade text-center mt-30" id="dinner-tab-pane" role="tabpanel" aria-labelledby="dinner-tab" tabindex="0">
+            <h2 class="text-muted">MENU</h2>
+            <h3 class="text-primary fs-1 mb-4">Dinner</h3>
+            <div class="row gy-3 justify-content-center">
+              <div class="col-md-6 col-lg-4">
+                <a href="#">
+                  <img src="img/loading.gif" data-src="img/menu/menu-13.jpg" alt="" class="img-fluid px-5 mb-4 lazy">
+                </a>
+                <h4 class="food-name mb-1">Strawberry Delight</h4>
+                <p class="ingredients text-muted mb-2">Strawberry, Sweet Corn, Choco Rings</p>
+                <p class="price text-primary fs-3 fw-bold">$11.95</p>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <a href="#">
+                  <img src="img/loading.gif" data-src="img/menu/menu-14.jpg" alt="" class="img-fluid px-5 mb-4 lazy">
+                </a>
+                <h4 class="food-name mb-1">Chicken & Chips</h4>
+                <p class="ingredients text-muted mb-2">Chicken, Chips, Carrot, Broccoli</p>
+                <p class="price text-primary fs-3 fw-bold">$8.49</p>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <a href="#">
+                  <img src="img/loading.gif" data-src="img/menu/menu-4.jpg" alt="" class="img-fluid px-5 mb-4 lazy">
+                </a>
+                <h4 class="food-name mb-1">Corn Delight</h4>
+                <p class="ingredients text-muted mb-2">Corn, Lettuce, Salad, Black Pepper</p>
+                <p class="price text-primary fs-3 fw-bold">$8.75</p>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <a href="#">
+                  <img src="img/loading.gif" data-src="img/menu/menu-16.jpg" alt="" class="img-fluid px-5 mb-4 lazy">
+                </a>
+                <h4 class="food-name mb-1">Corn Special</h4>
+                <p class="ingredients text-muted mb-2">Corn, Kuli, Onions, Spinach</p>
+                <p class="price text-primary fs-3 fw-bold">$9.25</p>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <a href="#">
+                  <img src="img/loading.gif" data-src="img/menu/menu-17.jpg" alt="" class="img-fluid px-5 mb-4 lazy">
+                </a>
+                <h4 class="food-name mb-1">Vegetable Soup</h4>
+                <p class="ingredients text-muted mb-2">Egg, Lettuce, Carrot, Cabbage</p>
+                <p class="price text-primary fs-3 fw-bold">$6.39</p>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <a href="#">
+                  <img src="img/loading.gif" data-src="img/menu/menu-10.jpg" alt="" class="img-fluid px-5 mb-4 lazy">
+                </a>
+                <h4 class="food-name mb-1">Fish Chips</h4>
+                <p class="ingredients text-muted mb-2">Fish Chips, Tomatoes, Broccoli</p>
+                <p class="price text-primary fs-3 fw-bold">$6.45</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Menu Section -->
+
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="bg-grey">
+      <div class="container-fluid text-center">
+        <div class="section-header" data-aos="zoom-in-up">
+          <h2 class="text-uppercase text-muted mb-0 fs-14">Events</h2>
+          <p class="display-5 fw-normal mb-0">Share <span class="text-primary">Your Moments</span> In Our Restaurant</p>
+        </div>
+
+        <!-- Events Carousel -->
+        <div class="swiper events-slider text-start" data-aos="fade-up">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide event d-flex flex-column justify-content-end p-4" style="background-image: url('img/events-1.jpg');">
+              <h3 class="fw-bolder position-relative text-white fs-4 mb-1">Birthday Parties</h3>
+              <div class="price fw-bolder position-relative text-white mb-3 align-self-start">$159</div>
+              <p class="event-description position-relative text-white mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quasi facilis error, deserunt laboriosam ratione dolor consequatur amet eligendi sint unde inventore.</p>
+            </div>
+            <div class="swiper-slide event d-flex flex-column justify-content-end p-4" style="background-image: url('img/events-2.jpg');">
+              <h3 class="fw-bolder position-relative text-white fs-4 mb-1">Private Parties</h3>
+              <div class="price fw-bolder position-relative text-white mb-3 align-self-start">$259</div>
+              <p class="event-description position-relative text-white mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quasi facilis error, deserunt laboriosam ratione dolor consequatur amet eligendi sint unde inventore.</p>
+            </div>
+            <div class="swiper-slide event d-flex flex-column justify-content-end p-4" style="background-image: url('img/events-3.jpg');">
+              <h3 class="fw-bolder position-relative text-white fs-4 mb-1">Wedding Parties</h3>
+              <div class="price fw-bolder position-relative text-white mb-3 align-self-start">$459</div>
+              <p class="event-description position-relative text-white mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quasi facilis error, deserunt laboriosam ratione dolor consequatur amet eligendi sint unde inventore.</p>
+            </div>
+          </div>
+
+          <div class="swiper-pagination position-relative mt-3"></div>
+        </div>
+      </div>
+    </section><!-- End Events Section -->
+
+    <!-- ======= Chefs Section ======= -->
+    <section id="chefs">
+      <div class="container text-center">
+        <div class="section-header" data-aos="zoom-in-up">
+          <h2 class="text-uppercase text-muted mb-0 fs-14">Chefs</h2>
+          <p class="display-5 fw-normal mb-0">Our <span class="text-primary">Professional</span> Chefs</p>
+        </div>
+        <div class="row gy-4 justify-content-center">
+          <div class="col-md-6 col-lg-4 py-10" data-aos="fade-up">
+            <div class="chef-box shadow bg-white rounded-3 overflow-hidden">
+              <div class="chef-image position-relative">
+                <img src="img/loading.gif" data-src="img/chefs/chefs-1.jpg" class="img-fluid lazy" alt="">
+                <div class="social position-absolute">
+                  <a href="#">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="chef-description py-20 px-3">
+                <h4 class="mb-1 fw-bold">Taiwo Adewale</h4>
+                <span class="fs-14 opacity-75 text-muted">Chief Cook</span>
+                <p class="text-muted fst-italic fs-14 pt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni corrupti magnam quibusdam assumenda commodi quis fugit alias ex debitis ea.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 py-10" data-aos="fade-up" data-aos-delay="150">
+            <div class="chef-box shadow bg-white rounded-3 overflow-hidden">
+              <div class="chef-image position-relative">
+                <img src="img/loading.gif" data-src="img/chefs/chefs-2.jpg" class="img-fluid lazy" alt="">
+                <div class="social position-absolute">
+                  <a href="#">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="chef-description py-20 px-3">
+                <h4 class="mb-1 fw-bold">Sandra Chinonso</h4>
+                <span class="fs-14 opacity-75 text-muted">Pastry Chef</span>
+                <p class="text-muted fst-italic fs-14 pt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni corrupti magnam quibusdam assumenda commodi quis fugit alias ex debitis ea.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 py-10" data-aos="fade-up" data-aos-delay="300">
+            <div class="chef-box shadow bg-white rounded-3 overflow-hidden">
+              <div class="chef-image position-relative">
+                <img src="img/loading.gif" data-src="img/chefs/chefs-3.jpg" class="img-fluid lazy" alt="">
+                <div class="social position-absolute">
+                  <a href="#">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="chef-description py-20 px-3">
+                <h4 class="mb-1 fw-bold">Daudu Ahmed</h4>
+                <span class="fs-14 opacity-75 text-muted">Assistant Cook</span>
+                <p class="text-muted fst-italic fs-14 pt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni corrupti magnam quibusdam assumenda commodi quis fugit alias ex debitis ea.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Chefs Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="bg-grey">
+      <div class="container">
+        <div class="section-header text-center" data-aos="zoom-in-up">
+          <h2 class="text-uppercase text-muted mb-0 fs-14">About Us</h2>
+          <p class="display-5 fw-normal mb-0">Learn More <span class="text-primary">About Us</span></p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-7 position-relative about-img" data-aos="fade-up">
+            <div class="call-us position-absolute bg-white p-20 text-center">
+              <h4 class="mb-1 fw-bolder">Book a Table</h4>
+              <p class="fw-bolder text-primary">+234 810 746 3024</p>
+            </div>
+          </div>
+
+          <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="150">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </p>
+              <ul class="p-0">
+                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              </ul>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+              </p>
+
+              <div class="position-relative mt-4">
+                <img src="img/about-2.jpg" class="img-fluid w-100" alt="">
+                <a href="#" class="play-btn"><i class="bi bi-triangle-fill"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+      <div class="container text-center">
+        <div class="section-header" data-aos="zoom-in-up">
+          <h2 class="text-uppercase text-muted mb-0 fs-14">Contact</h2>
+          <p class="display-5 fw-normal mb-0">Need Help? <span class="text-primary">Contact Us</span></p>
+        </div>
+
+        <!-- Google Maps Location -->
+        <div class="mb-3" data-aos="fade-up">
+          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.767808341605!2d4.528786920589511!3d7.814385496596944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1037865047e9865f%3A0xe6f7ca22c6b0002e!2sRG7J%2B826%2C%20Osogbo%20-%20Ogbomoso%20Rd%2C%20230103%2C%20Ifon-Osun!5e0!3m2!1sen!2sng!4v1659571708087!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        </div>
+
+        <!-- Our Info -->
+        <div class="row gy-4 text-start" data-aos="fade-up">
+          <div class="col-md-6">
+            <div class="info-item p-30 d-flex align-items-center h-100">
+              <i class="bi bi-map flex-shrink-0 d-flex justify-content-center align-items-center text-white bg-primary me-3"></i>
+              <div>
+                <h3 class="mb-1 fw-bolder">Our Address</h3>
+                <p class="p-0 m-0 fs-14">B13 Alex Street, Crescent Avenue <br> Lagos, Nigeria<br></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-item p-30 d-flex align-items-center h-100">
+              <i class="bi bi-envelope flex-shrink-0 d-flex justify-content-center align-items-center text-white bg-primary me-3"></i>
+              <div>
+                <h3 class="mb-1 fw-bolder">Email Us</h3>
+                <p class="p-0 m-0 fs-14 w-break">adewaletaiwo08@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-item p-30 d-flex align-items-center h-100">
+              <i class="bi bi-telephone flex-shrink-0 d-flex justify-content-center align-items-center text-white bg-primary me-3"></i>
+              <div>
+                <h3 class="mb-1 fw-bolder">Call Us</h3>
+                <p class="p-0 m-0 fs-14">+234 810 746 3024</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-item p-30 d-flex align-items-center h-100">
+              <i class="bi bi-share flex-shrink-0 d-flex justify-content-center align-items-center text-white bg-primary me-3"></i>
+              <div>
+                <h3 class="mb-1 fw-bolder">Opening Hours</h3>
+                <p class="p-0 m-0 fs-14"><strong>Mon-Sat:</strong> 9AM - 10PM <br> <strong>Sundays:</strong> Closed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form action="" method="post" role="form" class="w-100 px-3 px-md-4 py-30 mt-30" id="contactForm" data-aos="fade-up">
+          <div class="row">
+            <div class="col-lg-6 form-group pb-20">
+              <input type="text" name="name" id="name" class="form-control" placeholder="Your Name">
+              <p class="error-message"></p>
+            </div>
+            <div class="col-lg-6 form-group pb-20">
+              <input type="text" name="email" id="email" class="form-control" placeholder="Your Email">
+              <p class="error-message"></p>
+            </div>
+          </div>
+          <div class="form-group pb-20">
+            <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
+            <p class="error-message"></p>
+          </div>
+          <div class="form-group pb-20">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+            <p class="error-message"></p>
+          </div>
+          <div class="success-message alert alert-success d-flex align-items-center my-3 text-start d-none" role="alert">
+            <i class="bi bi-check-circle-fill flex-shrink-0 me-10"></i>
+            <div class="">Your message has been sent. We will get back to you shortly.</div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary rounded-pill">
+              <span class="text">Send Message</span>
+              <span class="spinner-border spinner-border-sm d-none" role="status"></span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section><!-- End Contact Section -->
+
+    <!-- ======= Book a Table Modal ======= -->
+    <div class="modal fade" id="bookTableModal" tabindex="-1" role="dialog" aria-labelledby="bookTableModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body px-20 px-md-30 py-40 position-relative">
+
+            <!-- Close Modal Button -->
+            <button type="button" class="close position-absolute bg-transparent border-0" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            
+            <div class="section-header text-center">
+              <h2 class="text-uppercase text-muted mb-0 fs-14">Book a Table</h2>
+              <p class="display-5 fw-normal mb-0">Book<span class="text-primary">Your Stay</span> With Us</p>
+            </div>
+
+            <div class="row g-0">
+              <div class="col-lg-4 reservation-img"></div>
+    
+              <!-- ======= Reservation Form ======= -->
+              <div class="col-lg-8 d-flex align-items-center py-30 px-20 px-sm-30 reservation-form">
+                <form action="" method="post" role="form" id="reservationForm">
+                  <div class="row gy-4">
+                    <div class="col-md-6 form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
+                      <p class="error-message"></p>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
+                      <p class="error-message"></p>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone">
+                      <p class="error-message"></p>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <input type="text" name="date" class="form-control" id="date" placeholder="Date">
+                      <p class="error-message"></p>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <input type="text" class="form-control" name="time" id="time" placeholder="Time">
+                      <p class="error-message"></p>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <input type="number" class="form-control" name="people" id="people" placeholder="Number of people">
+                      <p class="error-message"></p>
+                    </div>
+                  </div>
+                  <div class="form-group mt-3">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                    <p class="error-message"></p>
+                  </div>
+                  <div class="success-message alert alert-success d-flex align-items-center my-3 text-start d-none" role="alert">
+                    <i class="bi bi-check-circle-fill flex-shrink-0 me-10"></i>
+                    <div class="">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+                  </div>
+                  <div class="text-center mt-30">
+                    <button type="submit" class="btn btn-primary rounded-pill">
+                      <span class="text">Book a Table</span>
+                      <span class="spinner-border spinner-border-sm d-none" role="status"></span>
+                    </button>
+                  </div>
+                </form>
+              </div><!-- End Reservation Form -->
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Book a Table Modal -->
+    
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer text-white fs-14">
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-md-6 col-lg-3 d-flex mb-md-30">
+          <i class="bi bi-geo-alt me-3 icon"></i>
+          <div>
+            <h4 class="fs-bold pb-1 fs-5">Address</h4>
+            <p class="opacity-75 fs-14">B13 Alex Street, Crescent Avenue <br> Lagos, Nigeria<br></p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex mb-md-30">
+          <i class="bi bi-telephone me-3 icon"></i>
+          <div>
+            <h4 class="fs-bold pb-1 fs-5">Reservations</h4>
+            <p class="opacity-75 fs-14"><strong>Phone:</strong> +234 810 746 3024 <br> <strong>Email:</strong> adewaletaiwo08@gmail.com <br></p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex mb-md-30">
+          <i class="bi bi-clock me-3 icon"></i>
+          <div>
+            <h4 class="fs-bold pb-1 fs-5">Opening Hours</h4>
+            <p class="opacity-75 fs-14"><strong>Mon-Sat:</strong> 9AM - 10PM <br> <strong>Sundays:</strong> Closed</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-md-30 mb-30 mb-md-0 text-center text-md-start">
+          <h4 class="fs-bold pb-1 fs-5">Follow Us</h4>
+          <div class="d-flex social-links justify-content-center justify-content-md-start">
+            <a href="https://twitter.com/wale_xxl?s=09" target="_blank">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="container">
+      <div class="copyright text-center pt-30 opacity-75">
+        © Copyright <strong><span>Yummy</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <!-- ======= Scroll to Top ======= -->
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center position-fixed bg-primary">
+    <i class="bi bi-arrow-up-short text-white"></i>
+  </a><!-- End Scroll to Top -->
+
+
+  <!-- Vendor JS Files -->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script><!-- CDN -->
+  <script src="vendor/aos/aos.js"></script><!-- CDN -->
+  <script src="vendor/swiper/swiper.js"></script><!-- CDN -->
+
+  <!-- Custom JS File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
