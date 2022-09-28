@@ -401,6 +401,7 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       .catch(err => console.log(err)) */
 
+      //show success message without server side check
       form.reset()
 
       let inputCont = form.querySelectorAll('.form-group');
